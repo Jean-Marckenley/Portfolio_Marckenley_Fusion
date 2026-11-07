@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',Arial,sans-serif;color:#eaf2fa;background:#091322;font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:74px}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}.nav{position:fixed;z-index:20;top:0;left:0;right:0;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(6%,calc((100vw - 1200px)/2));background:rgba(7,16,31,.85);border-bottom:1px solid rgba(255,255,255,.09);backdrop-filter:blur(16px)}.brand{font:800 27px Manrope,sans-serif;letter-spacing:-1px}.brand span{color:#47d4dc}.navlinks{display:flex;gap:30px;font-size:14px;color:#cad8e7}.navlinks a:hover,.back:hover{color:#63edf1}.menu{display:none;background:none;border:0;color:white;font-size:26px}.hero{min-height:770px;height:100vh;max-height:1000px;position:relative;background:#0f2234 url('/images/Background_home.jpg') center/cover no-repeat;display:flex;align-items:center}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,26,.94) 4%,rgba(7,16,32,.78) 48%,rgba(9,19,37,.45) 100%),linear-gradient(0deg,#091322,transparent 22%)}.hero-content{position:relative;width:min(1200px,88%);margin:auto;padding-top:50px}.eyebrow{color:#61e2e3;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(44px,5.5vw,80px);line-height:1.16;letter-spacing:-3px;margin:24px 0 15px;max-width:870px}.hero h1 span{color:#69e0e5}.role{font-weight:700;font-size:clamp(17px,2vw,23px);color:#c4d9ed}.lede{max-width:600px;color:#b7c6da;font-size:18px;line-height:1.8}.actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:34px}.primary,.secondary{display:inline-flex;gap:18px;align-items:center;justify-content:center;padding:14px 23px;border-radius:9px;font-size:14px;font-weight:800}.primary{background:#65dce1;color:#07202c}.secondary{border:1px solid #5d7288;color:white}.primary:hover{background:#a2f4f2}.secondary:hover{border-color:#9cf2f3}.scroll-down{position:absolute;left:6%;bottom:35px;color:#bed5e2;font-size:13px}.section{padding:110px 0}.wrap{width:min(1200px,88%);margin:auto}.section h2{font:800 clamp(30px,4vw,46px) Manrope,sans-serif;letter-spacing:-1.7px;margin:14px 0 40px}.alt{background:#0e1d2e}.about-card{display:grid;grid-template-columns:1fr 1.3fr;gap:70px;align-items:center;padding:44px;border:1px solid #253a50;border-radius:18px;background:linear-gradient(125deg,#13283e,#0b182a)}.about-card h3{font:800 25px/1.5 Manrope;margin:0;max-width:390px}.large-asterisk{color:#5edbe0;font-size:50px}.about-card p{font-size:17px;line-height:1.9;color:#bacce0}.skill-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.skill{padding:22px;border:1px solid #2a4056;border-radius:10px;background:#14283e;font-weight:700;display:flex;gap:11px;align-items:center}.skill-dot{width:9px;height:9px;border-radius:50%;background:#63dae0;flex-shrink:0}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.project{background:#112338;border:1px solid #294056;border-radius:16px;overflow:hidden;transition:transform .2s}.project:hover{transform:translateY(-5px)}.project-photo{height:210px;position:relative;background:#172b42}.project-photo img{width:100%;height:100%;object-fit:cover}.project-num{position:absolute;top:16px;left:16px;background:#0c1b2ce8;padding:9px 12px;border-radius:8px;font-weight:800}.project-body{padding:24px}.project-body h3{font:800 21px Manrope;margin:0}.project-body p{line-height:1.7;color:#b7c7d9;min-height:112px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tags span{border:1px solid #356177;color:#89e7e8;border-radius:20px;padding:6px 10px;font-size:12px}.education{display:flex;justify-content:space-between;gap:25px;align-items:center;padding:28px 32px;border-left:3px solid #5ddade;background:#172b41;border-radius:0 10px 10px 0}.education h3{margin:0 0 10px}.education p{margin:0;color:#c0cede}.education>span{color:#6fdee1;white-space:nowrap}.contact{background:radial-gradient(ellipse at 70% 45%,#173b51,#091322 70%)}.contact .wrap{max-width:800px;text-align:center}.contact p:not(.eyebrow){color:#bdd0e0;font-size:18px;line-height:1.7}.contact .actions{justify-content:center}.notice{font-size:13px;color:#bdd0e0;border:1px dashed #496378;padding:14px;border-radius:8px}footer{text-align:center;padding:27px 10px;border-top:1px solid #25384a;color:#869eb3;font-size:13px}.public-page{min-height:100vh;padding:145px 0 80px}.public-card{margin-top:28px;padding:36px;background:#12243b;border:1px solid #2b4459;border-radius:16px}.public-card h1{font:800 clamp(34px,5vw,60px) Manrope}.public-card h2{color:#71d9e0}.public-card p{line-height:1.9}.back{color:#a8cad4}@media(max-width:850px){.skill-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:1fr 1fr}.about-card{gap:26px}}@media(max-width:650px){.nav{padding:0 6%}.menu{display:block}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 6%;flex-direction:column;gap:20px;background:#091322}.navlinks.visible{display:flex}.hero{min-height:680px}.hero h1{letter-spacing:-1.8px}.section{padding:75px 0}.about-card{grid-template-columns:1fr;padding:25px}.project-grid{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.skill{padding:14px;font-size:13px}.education{align-items:flex-start;flex-direction:column}.project-body p{min-height:0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* ADMINISTRATION */
+
+.admin-page {
+    min-height: 100vh;
+    padding: 70px 6%;
+    background: #091322;
+    color: #eaf2fa;
+}
+
+.admin-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.admin-login {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 36px;
+    border: 1px solid #294056;
+    border-radius: 18px;
+    background: #112338;
+}
+
+.admin-login h1,
+.admin-header h1 {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(27px, 4vw, 40px);
+}
+
+.admin-login p,
+.admin-header p,
+.admin-project p {
+    color: #b7c7d9;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.admin-panel {
+    margin-top: 28px;
+    padding: 28px;
+    background: #112338;
+    border: 1px solid #294056;
+    border-radius: 16px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.admin-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.admin-form input,
+.admin-form textarea {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #40566d;
+    background: #0b1b2d;
+    color: white;
+    font: inherit;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+    outline: 2px solid #65dce1;
+    outline-offset: 1px;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.admin-actions button,
+.admin-form button {
+    cursor: pointer;
+}
+
+.admin-stat {
+    padding: 24px;
+    border: 1px solid #294056;
+    border-radius: 14px;
+    background: #14283e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-stat strong {
+    font-size: 32px;
+    color: #65dce1;
+}
+
+.admin-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid #294056;
+}
+
+.admin-project:last-child {
+    border-bottom: none;
+}
+
+.admin-project small {
+    color: #65dce1;
+}
+
+.admin-delete {
+    padding: 13px 20px;
+    border: 1px solid #b65b68;
+    border-radius: 9px;
+    background: transparent;
+    color: #ff9eaa;
+}
+
+.admin-message {
+    padding: 14px;
+    border: 1px solid #416478;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+@media (max-width: 650px) {
+    .admin-header,
+    .admin-project {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-login,
+    .admin-panel {
+        padding: 20px;
+    }
+}
+

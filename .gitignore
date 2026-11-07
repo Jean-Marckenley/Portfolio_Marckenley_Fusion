@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dépendances
+node_modules/
+**/node_modules/
+
+# Builds
+dist/
+**/dist/
+
+# Fichiers temporaires
+*.log
+.idea/
+.vscode/
+
+# Secrets privés
+secrets/
+*.pem
+*.key
