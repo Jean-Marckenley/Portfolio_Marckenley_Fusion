@@ -16,8 +16,9 @@ import {
 // CONFIGURATION API
 // ========================================
 
-const API =
-    import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+const API = import.meta.env.PROD
+    ? ""
+    : (import.meta.env.VITE_API_URL ?? "http://localhost:3000");
 
 const SLUG = "marckenley";
 

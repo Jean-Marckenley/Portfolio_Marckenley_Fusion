@@ -1,7 +1,9 @@
 import { useEffect, useState, type FormEvent } from "react";
 
 
-const API = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+const API = import.meta.env.PROD
+    ? ""
+    : (import.meta.env.VITE_API_URL ?? "http://localhost:3000");
 const DEFAULT_SLUG = "marckenley";
 
 type SectionProps = { slug?: string };
@@ -125,9 +127,9 @@ export function FormationSection({
 
    try {
     const response = await fetch(
-        `${import.meta.env.VITE_API_URL ?? "http://localhost:3000"}/api/content/${encodeURIComponent(slug)}`,
-        { signal: controller.signal }
-    );
+        `${API}/api/content/${encodeURIComponent(slug)}`,
+    { signal: controller.signal }
+   );
 
     if (!response.ok) {
      throw new Error("Impossible de charger les formations.");
@@ -239,8 +241,9 @@ type ProjectItem = {
  sort_order: number;
 };
 
-const PUBLIC_API =
-    import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+const PUBLIC_API = import.meta.env.PROD
+    ? ""
+    : (import.meta.env.VITE_API_URL ?? "http://localhost:3000");
 
 function formatPublicDate(value: string | null): string {
  if (!value) return "Aujourd'hui";
