@@ -39,6 +39,7 @@ type PublicProfile = {
 
 function Nav() {
   const [open, setOpen] = useState(false);
+  const [photoOuverte, setPhotoOuverte] = useState(false);
 
   const links = [
     { name: "À propos", id: "about" },
@@ -51,9 +52,26 @@ function Nav() {
 
   return (
       <header className="nav">
-        <a className="brand" href="/#home">
-          MC<span>.</span>
-        </a>
+
+        <div className="brand-profile">
+          <button
+              type="button"
+              className="profile-photo-button"
+              onClick={() => setPhotoOuverte(true)}
+              aria-label="Afficher ma photo"
+          >
+            <img
+                src="/images/cv.jpeg"
+                alt="Photo de profil"
+                className="profile-photo"
+            />
+          </button>
+
+          <a className="brand" href="/#home">
+            JMC<span>.</span>
+          </a>
+        </div>
+
 
         <button
             className="menu"
@@ -79,6 +97,36 @@ function Nav() {
               </a>
           ))}
         </nav>
+
+        {photoOuverte && (
+            <div
+                className="photo-overlay"
+                onClick={() => setPhotoOuverte(false)}
+            >
+              <div
+                  className="photo-modal"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label="Photo agrandie"
+                  onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                    type="button"
+                    className="photo-close"
+                    onClick={() => setPhotoOuverte(false)}
+                    aria-label="Fermer la photo"
+                >
+                  ×
+                </button>
+
+                <img
+                    src="/images/cv.jpeg"
+                    alt="Photo professionnelle"
+                />
+              </div>
+            </div>
+        )}
+
       </header>
   );
 }
