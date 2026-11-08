@@ -1,5 +1,10 @@
+
 {
   "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://portfolio-marckenley-api.onrender.com/api/:path*"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
